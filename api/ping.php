@@ -1,8 +1,9 @@
 <?php
+// Require do arquivo de configuração - todos os arquivos vão fazer
 require('../config.php');
 
-//
-$array = [];
+$array['result'] = [
+    'pong' => true,
+];
 
-echo json_encode($array);
-exit;
+require('../return.php');
